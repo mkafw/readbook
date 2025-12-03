@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@telegram-apps/telegram-ui": "^2.1.9",
+    "@tma.js/sdk": "^2.2.6",
     "@tma.js/sdk-react": "^3.0.8",
     "@tonconnect/ui-react": "^2.2.0",
     "@epubjs-react/core": "^1.1.0"
