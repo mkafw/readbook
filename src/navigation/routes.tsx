@@ -1,6 +1,5 @@
 // src/navigation/routes.tsx
-import ReaderPage from '@/pages/ReaderPage';
-
-export const routes = [
-  { path: '/', Component: ReaderPage },
+import Reader from '@/pages/Reader';
+export const routes: Route[] = [
+  { path: '/', Component: Reader },
 ];
