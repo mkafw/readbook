@@ -22,3 +22,12 @@ export function App() {
     </AppRoot>
   );
 }
+.glass-container, .glass-reader {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-radius: 24px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.glass-reader { padding: 0; overflow: hidden; }
