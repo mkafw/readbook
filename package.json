@@ -1,0 +1,27 @@
+{
+  "name": "readbook-mcp-server",
+  "version": "1.0.0",
+  "description": "A Model Context Protocol server for reading books based on Telegram Mini App",
+  "type": "module",
+  "bin": {
+    "readbook-mcp": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\",
+    "prepare": "npm run build",
+    "watch": "tsc --watch",
+    "inspector": "npx @modelcontextprotocol/inspector build/index.js",
+    "dev": "npm run build && npm run inspector"
+  },
+  "keywords": ["mcp", "readbook", "reading", "telegram", "mini-app"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
